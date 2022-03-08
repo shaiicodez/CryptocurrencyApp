@@ -45,7 +45,7 @@ fun CoinDetailScreen(
                         )
                         Text(
                             text = if(coin.isActive) "active" else "inactive",
-                            color = if(coin.isActive) Color.Green else Color.Red,
+                            color = if(coin.isActive) Color(143, 227, 217, 255) else Color(253, 127, 167, 255),
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier

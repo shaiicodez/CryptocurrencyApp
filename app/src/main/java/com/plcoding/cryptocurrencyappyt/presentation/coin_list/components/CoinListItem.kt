@@ -11,10 +11,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.plcoding.cryptocurrencyappyt.R
 import com.plcoding.cryptocurrencyappyt.domain.model.Coin
 
 @Composable
@@ -36,7 +38,7 @@ fun CoinListItem(
         )
         Text(
             text = if(coin.isActive) "active" else "inactive",
-            color = if(coin.isActive) Color.Green else Color.Red,
+            color = if(coin.isActive) Color(143, 227, 217, 255) else Color(253, 127, 167, 255),
             fontStyle = FontStyle.Italic,
             textAlign = TextAlign.End,
             style = MaterialTheme.typography.body2,
